@@ -15,6 +15,7 @@ for (i = 0; i < keys.length; i++) {
 del.addEventListener("click", () => {
     var value = exp.value;
     exp.value = value.substr(0, value.length - 1);
+    calc.textContent = eval(exp.value)
 })
 
 clr.addEventListener("click", () => {
